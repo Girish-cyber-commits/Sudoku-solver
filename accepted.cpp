@@ -29,7 +29,7 @@ bool solve( vector<vector<int>> & board ) {
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
       if (board[i][j] == 0) {
-        for (char k = 1; k <= 9 ; k++) {
+        for (int k = 1; k <= 9 ; k++) {
           if (nowvalid( i, j, board, k)) {
             board[i][j] = k;
             if ( solve(board) == true)
